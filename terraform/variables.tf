@@ -37,11 +37,6 @@ variable "allow_cidr" {
   type = list(string)
 }
 
-# Define ami for main_vm ec2 instance
-variable "main_vm_ami" {
-  description = "AMI for amazon linux for my main_vm"
-  type = string
-}
 
 # Define instance_type for main_vm ec2 instance
 variable "main_vm_type" {
@@ -54,3 +49,11 @@ variable "key_name"{
   description = "key_name which gets from key pairs for main_vm"
   type = string
 }
+
+# Define S3 Bucket name
+variable "bucket_name" {
+  description = "S3 bucket name for main_bucket to store terraform.tfstate file remotely"
+  type = string
+}
+
+ 
