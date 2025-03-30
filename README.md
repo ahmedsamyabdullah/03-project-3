@@ -6,3 +6,5 @@
 4. Internet gateway
 5. ACLs - Security group
 6. ec2 instance
+***
+# Ansible With AWS

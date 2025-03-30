@@ -1,0 +1,7 @@
+---
+- name: Check httpd is running 
+  hosts: aws_instance
+  become: yes 
+
+  roles:
+    - apache 

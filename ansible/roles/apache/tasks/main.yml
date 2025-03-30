@@ -1,0 +1,10 @@
+---
+# tasks file for appache
+  - name: Check httpd Status 
+    ansible.builtin.shell: systemctl is-active httpd
+    register: httpd_status
+    ignore_errors: yes
+
+  - name: Show httpd Status
+    ansible.builtin.debug:
+        msg: "HTTPD is {{httpd_status.stdout}}"
